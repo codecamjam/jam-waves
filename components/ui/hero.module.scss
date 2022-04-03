@@ -1,0 +1,119 @@
+@import '../../styles/base/animations';
+@import '../../styles/abstracts/sass-variables';
+
+/**********************************************************************/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+  margin: auto;
+  padding-bottom: 7rem;
+
+  @media screen and (orientation: landscape) {
+    margin: auto;
+  }
+
+  @media screen and (max-height: $bp-md) and (orientation: portrait) {
+    margin: 7rem 0 auto;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-height: $bp-sm) and (orientation: portrait) {
+    margin: 6rem 0 auto;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-height: $bp-xs) and (orientation: portrait) {
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-height: $bp-xs) and (orientation: landscape) {
+    margin: 1rem auto auto;
+    padding-bottom: 0;
+  }
+}
+
+/**********************************************************************/
+.heading {
+  color: var(--text-light);
+
+  /* do this to fix the shaky animation issue */
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-md) {
+    margin-bottom: 2rem;
+  }
+
+  &Main {
+    backface-visibility: hidden;
+    // text-transform: uppercase;
+    display: block;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.8rem;
+    margin-bottom: 1.5rem;
+    // animation: moveInLeft 1.5s ease-out;
+    text-shadow: 1px 3px 3px rgba(var(--text), 0.7);
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      letter-spacing: 0.7rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+      animation: none;
+      display: flex;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 2rem;
+    }
+  }
+
+  &Sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    backface-visibility: hidden;
+    transform: translateY(0.5rem);
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 1.4rem;
+      white-space: nowrap;
+      font-style: italic;
+      font-weight: 700;
+      animation: none;
+      letter-spacing: 0.1rem;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      transform: translateY(0rem);
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      letter-spacing: 0.1rem;
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 700;
+      white-space: nowrap;
+      animation: none;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      letter-spacing: 0;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 700;
+      white-space: nowrap;
+      animation: none;
+    }
+  }
+}

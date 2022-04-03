@@ -1,15 +1,14 @@
-// import { useContext } from 'react';
-// import NavContext from "../store/nav-context";
-// import Hero from "../components/hero/Hero";
-// import Links from "../components/heroLinks/HeroLinks";
-import '../styles/Home.module.scss';
+import { useContext } from 'react';
+import NavContext from '@/store/nav-context';
+import Hero from '@/components/ui/hero';
+import MediaLinks from '@/components/ui/media-links';
 
 export default function HomePage() {
-  // const ctx = useContext(NavContext);
+  const ctx = useContext(NavContext);
   return (
-    <div className="home">
-      {/* <Hero />
-      {!ctx.expanded && <Links />} */}
+    <div className="homePage">
+      <Hero />
+      {!ctx.expanded && <MediaLinks />}
     </div>
   );
 }

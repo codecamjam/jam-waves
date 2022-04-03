@@ -1,0 +1,40 @@
+@import '../../styles/abstracts/sass-variables';
+
+/***********************************************************/
+.hero {
+  padding: 0.3rem;
+
+  @media only screen and (min-width: $bp-md) {
+    margin-left: auto;
+    margin-right: 0.8rem;
+  }
+}
+
+/***********************************************************/
+.links {
+  display: flex;
+  align-items: stretch;
+
+  svg {
+    display: block;
+
+    fill: rgba(#000, 0.7);
+
+    @media only screen and (min-width: $bp-sm) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+/***********************************************************/
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  width: 18rem;
+  @media only screen and (min-width: $bp-sm) {
+    width: 22rem;
+  }
+}

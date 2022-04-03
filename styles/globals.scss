@@ -2,7 +2,6 @@
 @import 'abstracts/css-variables';
 @import 'abstracts/sass-variables';
 @import 'base/animations';
-@import 'components/button';
 
 html,
 body {
@@ -35,4 +34,12 @@ body {
   display: grid;
   grid-template-rows: min-content minmax(min-content, 1fr);
   align-content: space-between;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }

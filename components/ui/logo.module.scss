@@ -1,0 +1,54 @@
+@import '../../styles/abstracts/sass-variables';
+
+/********************************************************/
+.content {
+  display: flex;
+  // flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 5.5rem;
+  padding: 1rem 0;
+
+  svg {
+    margin: 0.5rem 0;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    width: 16.8rem;
+    flex-direction: row;
+    transform: translateX(0);
+
+    svg {
+      transform: translateX(-0.4rem);
+    }
+  }
+}
+
+/********************************************************/
+.jamWaves {
+  font-family: 'Major Mono Display', monospace;
+  display: none;
+  font-size: 3rem;
+  // text-transform: uppercase;
+  // font-style: italic;
+  letter-spacing: 0.1rem;
+  line-height: 0;
+  font-weight: 400;
+
+  @media only screen and (min-width: $bp-md) {
+    display: block;
+  }
+}
+
+/********************************************************/
+.jam {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  // font-style: italic;
+  line-height: 0;
+
+  @media only screen and (min-width: $bp-md) {
+    display: none;
+  }
+}
