@@ -25,30 +25,28 @@
 }
 
 /********************************************************/
-.jamWaves {
+.tft {
   font-family: 'Major Mono Display', monospace;
-  display: none;
-  font-size: 3rem;
-  // text-transform: uppercase;
-  // font-style: italic;
+  font-style: italic;
   letter-spacing: 0.1rem;
   line-height: 0;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.4rem;
+  word-spacing: -0.3rem;
+
+  @media only screen and (min-width: $bp-sm) {
+    font-size: 1.7rem;
+    word-spacing: -0.4rem;
+  }
+
+  @media only screen and (min-width: $bp-sm) {
+    font-size: 2.2rem;
+    word-spacing: 0rem;
+  }
 
   @media only screen and (min-width: $bp-md) {
     display: block;
-  }
-}
-
-/********************************************************/
-.jam {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  // font-style: italic;
-  line-height: 0;
-
-  @media only screen and (min-width: $bp-md) {
-    display: none;
+    font-size: 2.5rem;
+    word-spacing: -0.1rem;
   }
 }

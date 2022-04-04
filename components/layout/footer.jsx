@@ -2,29 +2,33 @@ import Icon from '@/components/ui/icon/';
 
 import css from './footer.module.scss';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className={css.footer}>
       <div className={css.logos}>
-        <a href="#">
+        <a href="#" title="Twitch">
           <Icon spriteName="icon-twitch" />
         </a>
-        <a href="#">
+        <a href="#" title="Bandcamp">
           <Icon spriteName="icon-bandcamp" />
         </a>
-        <a href="#">
-          <Icon spriteName="icon-tiktok" />
-        </a>
-        <a href="#">
-          <Icon spriteName="icon-instagram" />
-        </a>
-        <a href="#">
+        <a href="#" title="YouTube">
           <Icon spriteName="icon-youtube2" />
         </a>
+        <a href="#" title="Instagram">
+          <Icon spriteName="icon-instagram" />
+        </a>
+
+        <a href="#" title="TikTok">
+          <Icon spriteName="icon-tiktok" />
+        </a>
       </div>
-      {/* <p className={css.copyright}>&copy; JAM WAVES</p> */}
+      <p className={css.copyright}>&copy; JAM WAVES</p>
+      <p className={css.jam} title="JAM">
+        果酱
+      </p>
     </footer>
   );
-};
+}
 
 export default Footer;

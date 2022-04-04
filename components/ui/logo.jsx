@@ -7,8 +7,7 @@ const Logo = () => {
     <div className={css.logo}>
       <Link href="/" passHref>
         <Navbar.Brand className={css.content}>
-          <span className={css.jamWaves}>Toys From Taiwan 果酱</span>
-          <span className={css.jam}>JAM 果酱 </span>
+          <span className={css.tft}>Toys From Taiwan</span>
           <Icon spriteName="" />
         </Navbar.Brand>
       </Link>

@@ -20,6 +20,16 @@
   a {
     display: flex;
     align-items: stretch;
+
+    &:hover svg,
+    &:focus svg {
+      fill: #fff;
+      transform: translate(0.1rem, -0.2rem);
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   svg {
@@ -28,10 +38,11 @@
     height: 1.5rem;
 
     fill: rgba(#fff, 0.6);
+    transition: all ease-in 0.2s;
 
     @media only screen and (min-width: $bp-sm) {
-      width: 2.4rem;
-      height: 2.4rem;
+      width: 2.3rem;
+      height: 2.3rem;
     }
   }
 }
@@ -42,17 +53,32 @@
   line-height: 0;
   position: relative;
   z-index: 2;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 
   @media only screen and (min-width: $bp-sm) {
+    margin-top: 0.5rem;
     font-size: var(--font-reg);
     transform: translate(1.5rem, 0.3rem);
   }
 
   @media only screen and (min-width: $bp-lg) {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0.3rem);
+    left: 48%;
+    transform: translate(-60%, 0.3rem);
+  }
+}
+
+.jam {
+  display: none;
+  @media only screen and (min-width: $bp-lg) {
+    display: block;
+    color: rgba(#fff, 0.6);
+    line-height: 0;
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    transform: translate(0.5rem, 0);
+    font-size: 2.5rem;
   }
 }
 
@@ -62,10 +88,10 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 0.5rem;
-  width: 100rem;
+  width: 18rem;
 
   @media only screen and (min-width: $bp-sm) {
-    transform: translate(-1.5rem, -0rem);
-    width: 50rem;
+    transform: translate(-1rem, -0.2rem);
+    width: 20rem;
   }
 }
