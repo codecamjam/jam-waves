@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Layout from '@/components/layout/layout';
 import { useEffect } from 'react';
 import { getAppHeight } from '@/utils/getAppHeight.utils';
-import BackgroundVideo from '@/components/ui/background-video';
+import BackgroundVideo from '@/components/ui/background-video/background-video';
 import { preventResizeAnime } from '@/utils/preventResizeAnime.utils';
 
 function MyApp({ Component, pageProps }) {

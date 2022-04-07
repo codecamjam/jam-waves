@@ -1,7 +1,7 @@
 import { Nav } from 'react-bootstrap';
 import Link from 'next/link';
-import Icon from './icon';
-import css from './navlink.module.scss';
+import Icon from '@/components/ui/icon/icon';
+import css from './nav-link.module.scss';
 
 const Navlink = ({ text, icon, route }) => {
   return (

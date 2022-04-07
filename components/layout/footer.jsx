@@ -1,4 +1,4 @@
-import Icon from '@/components/ui/icon/';
+import Icon from '@/components/ui/icon/icon';
 
 import css from './footer.module.scss';
 

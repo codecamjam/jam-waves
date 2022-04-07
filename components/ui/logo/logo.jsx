@@ -1,6 +1,6 @@
 import { Navbar } from 'react-bootstrap';
 import Link from 'next/link';
-import Icon from './icon';
+import Icon from '@/components/ui/icon/icon';
 import css from './logo.module.scss';
 const Logo = () => {
   return (

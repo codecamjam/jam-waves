@@ -1,5 +1,5 @@
-import Icon from './icon/';
-import Stars from './stars';
+import Icon from '@components/ui/icon/icon';
+import Stars from '@components/ui/stars/stars';
 import css from './card.module.scss';
 
 const Card = ({ title, icon, list, text, img }) => {

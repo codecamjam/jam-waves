@@ -1,0 +1,15 @@
+/****************************************************/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  -webkit-overflow-scrolling: touch;
+}
+
+/****************************************************/
+.bio {
+  margin: 0 0.4rem !important;
+}

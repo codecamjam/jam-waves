@@ -1,5 +1,5 @@
 import Icon from './icon';
-import css from './Stars.module.scss';
+import css from './stars.module.scss';
 
 const Stars = () => {
   return (

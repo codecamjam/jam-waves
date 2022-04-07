@@ -6,78 +6,118 @@
   height: var(--font-xl);
   cursor: pointer;
 
+  /****************************************************/
   &--light {
     fill: white;
   }
 
+  /****************************************************/
   &--home {
     transform: translateX(-0.2rem);
   }
 
+  /****************************************************/
   &--headphones {
   }
+
+  /****************************************************/
   &--music {
   }
+
+  /****************************************************/
   &--video-camera {
   }
+
+  /****************************************************/
   &--podcast {
   }
+
+  /****************************************************/
   &--mic {
     transform: translate(0.7rem, 0.2rem) !important;
   }
+
+  /****************************************************/
   &--phone {
-    transform: translateX(0.3rem);
+    transform: translateX(0.1rem);
   }
+
+  /****************************************************/
   &--address-book {
     width: 1.8rem !important;
   }
+
+  /****************************************************/
   &--envelop {
     height: 2.1rem;
     width: 2.1rem;
     transform: translateY(0);
   }
+
+  /****************************************************/
   &--calendar {
     height: 1.9rem;
     width: 1.9rem;
   }
+
+  /****************************************************/
   &--tv {
   }
+
+  /****************************************************/
   &--equalizer {
     width: 1.7rem !important;
   }
+
+  /****************************************************/
   &--eye {
     width: 1.7rem !important;
     height: 1.7rem !important;
+    transform: translateX(-0.1rem);
 
     @media only screen and (min-width: $bp-xs) {
       width: 2rem !important;
       height: 2rem !important;
+      // transform: translateX(-0.15rem);
     }
   }
+
+  /****************************************************/
   &--star-empty {
     width: 1.2rem !important;
     height: 1.2rem !important;
   }
+
+  /****************************************************/
   &--man {
     // width: 2.5rem;
     // height: 2.5rem;
     transform: translateX(-0.1rem);
   }
+
+  /****************************************************/
   &--facebook {
   }
+
+  /****************************************************/
   &--instagram {
     @media only screen and (min-width: $bp-sm) {
       width: 2.4rem !important;
     }
   }
+
+  /****************************************************/
   &--twitter {
   }
 
+  /****************************************************/
   &--appleinc {
     width: 2rem !important;
 
     // height: 3rem !important;
   }
+
+  /****************************************************/
   &--soundcloud {
     width: 2.4rem !important;
     height: 2.4rem !important;
@@ -90,6 +130,7 @@
     }
   }
 
+  /****************************************************/
   &--youtube {
     width: 3.5rem !important;
 
@@ -98,6 +139,7 @@
     }
   }
 
+  /****************************************************/
   &--waves {
     width: 4rem;
     height: 4rem;

@@ -1,6 +1,6 @@
-import Navlink from '../ui/navlink';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import Logo from '../ui/logo';
+import Navlink from '@/components/ui/nav-link/nav-link';
+import Logo from '@/components/ui/logo/logo';
 
 import css from './header.module.scss';
 
@@ -21,12 +21,12 @@ function Header({ toggle }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <Navlink route="/shows" text="shows" icon="icon-calendar" />
+              <Navlink route="/about" text="about" icon="icon-accessibility" />
               <Navlink
                 route="/contact"
                 text="contact"
                 icon="icon-address-book"
               />
-              <Navlink route="/about" text="about" icon="icon-accessibility" />
             </Nav>
           </Navbar.Collapse>
         </Container>
