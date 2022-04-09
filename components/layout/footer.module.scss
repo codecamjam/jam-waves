@@ -61,16 +61,16 @@
     transform: translate(1.5rem, 0.3rem);
   }
 
-  @media only screen and (min-width: $bp-lg) {
+  @media only screen and (min-width: $bp-xl) {
     position: absolute;
-    left: 48%;
-    transform: translate(-60%, 0.3rem);
+    left: 50%;
+    transform: translate(-50%, 0.3rem);
   }
 }
 
 .jam {
   display: none;
-  @media only screen and (min-width: $bp-lg) {
+  @media only screen and (min-width: $bp-xl) {
     display: block;
     color: rgba(#fff, 0.6);
     line-height: 0;

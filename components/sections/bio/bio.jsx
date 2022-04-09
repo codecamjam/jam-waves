@@ -4,6 +4,7 @@ import Contact from '@/components/ui/contact/contact';
 import Icon from '@/components/ui/icon/icon';
 import { text1, text2, text3, text4 } from './bio.utils';
 import css from './bio.module.scss';
+import BookButton from '@/components/ui/book-button/book-button';
 
 export default function Bio() {
   return (
@@ -25,35 +26,25 @@ export default function Bio() {
           >
             <p className={css.text}>
               <span>
-                Thanks for visiting my site! I am a solo musician based in sunny
-                Jacksonville, FL. I provide <strong>professional</strong> audio,
-                video, and streaming solutions. I have a Bachelors in Recording
-                Arts from Full Sail University and over 15 years of experience.
-                I've worked in both broadcasting and in the music industry, so I
-                know what goes into producing{' '}
-                <strong>professional-grade</strong> content.
+                {`Thanks for visiting my site! I'm a solo musician based in sunny Jacksonville, FL. I provide a`}{' '}
+                <strong>live</strong>{' '}
+                {`one man show that's unlike any solo act you've ever seen. `}
+                Basically, my show is a <strong>100% live-looped</strong>,
+                nonstop, instrumental jam session.
+                {` You'll see me play guitar, bass, keys, bongos, congos, and so much more!  And it's all me,`}{' '}
+                <strong>live-looped</strong>
+                {`, and made in real time! I may also have
+                some ambient nature sounds playing in the background from time
+                to time, so it's a very relaxing, refreshing kind of vibe.`}
               </span>
             </p>
             <p className={css.text}>{text2}</p>
           </Col>
           <Col xs={12} className="d-flex justify-content-center my-3">
-            <EmailBtn />
+            <BookButton />
           </Col>
         </Row>
       </Container>
     </section>
   );
 }
-
-const EmailBtn = () => (
-  <a
-    href="mailto:chillaxmusicgroup@gmail.com"
-    target="_blank"
-    className="btn btn--hero btn--animated bio-btn"
-    rel="noreferrer"
-  >
-    <div className={css['bio-btn__content']}>
-      <span>Book Now!</span>
-    </div>
-  </a>
-);
