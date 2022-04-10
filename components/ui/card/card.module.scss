@@ -1,5 +1,6 @@
-@import '../../styles/abstracts/sass-variables';
+@import '../../../styles/abstracts/sass-variables';
 
+/*****************************************************************/
 .card {
   overflow-x: hidden;
   margin: 0.3rem 0rem;
@@ -46,6 +47,7 @@
   }
 }
 
+/*****************************************************************/
 .header {
   display: flex;
   flex-direction: row-reverse;
@@ -53,10 +55,11 @@
   align-items: baseline;
 }
 
+/*****************************************************************/
 .title {
   font-weight: 400;
   font-size: 2rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
   margin: 0.5rem 0 1rem;
   text-transform: uppercase;
   color: rgba(#fff, 0.7);
@@ -67,6 +70,7 @@
   }
 }
 
+/*****************************************************************/
 .list {
   list-style: none;
   padding-left: 0rem;
@@ -106,44 +110,48 @@
   }
 }
 
+/*****************************************************************/
 .img {
   display: block;
   border-radius: 50%;
 
-  height: 16rem;
-  width: 16rem;
+  height: 16.5rem;
+  width: 16.5rem;
   overflow: visible;
   align-self: center;
   background-size: cover;
   transform: translateY(-0.3rem);
   border: 1px solid rgba(#000, 0.8);
-  -webkit-filter: drop-shadow(0.3rem 0.4rem 0.2rem #000);
-  filter: drop-shadow(0.3rem 0.4rem 0.2rem #000);
   position: relative;
   z-index: 1;
 
-  &--guitar {
-    background-image: url(../../assets/img/guitar.jpg);
-    background-position: center 70%;
+  &--photo1 {
+    background-image: url(../../../public/images/bunny-ears.png);
+    background-position: center top 27rem;
+
     opacity: 0.5;
+    animation: trippy 5s reverse infinite;
   }
 
-  &--wideLens {
-    background-image: url(../../assets/img/wideLens.jpg);
-    background-position: center 99%;
-    opacity: 0.4;
+  &--photo2 {
+    background-image: url(../../../public/images/jam-room.jpg);
+    background-position: left 53rem center;
+
+    opacity: 0.5;
+    animation: trippy 5s infinite;
   }
 
-  &--photography {
-    background-image: url(../../assets/img/photography.jpg);
-    background-position: center 99%;
-    opacity: 0.35;
+  &--photo3 {
+    background-image: url(../../../public/images/grey-shirt.png);
+    background-position: left 53rem center;
+    opacity: 0.5;
+    animation: trippy 5s reverse infinite;
   }
 
   @media only screen and (min-width: $bp-sm) {
     margin-right: 1rem;
-    height: 16rem;
-    width: 16rem;
+    height: 16.5rem;
+    width: 16.5rem;
   }
 
   @media only screen and (max-width: 39.68625em) {
@@ -153,8 +161,8 @@
   }
 
   @media only screen and (max-width: $bp-sm) {
-    height: 16rem;
-    width: 16rem;
+    height: 16.5rem;
+    width: 16.5rem;
   }
 
   @media only screen and (min-width: $bp-lg) {
@@ -166,6 +174,7 @@
   }
 }
 
+/*****************************************************************/
 .body {
   display: flex;
   flex-direction: column;
@@ -180,11 +189,13 @@
   }
 }
 
+/*****************************************************************/
 .footer {
   display: flex;
   flex-direction: column;
 }
 
+/*****************************************************************/
 .quote {
   font-size: 1rem;
   margin-top: 1rem;
@@ -208,5 +219,20 @@
     font-size: 1.1rem;
     transform: translateX(-0.1rem);
     white-space: nowrap;
+  }
+}
+
+/************************************************/
+@keyframes trippy {
+  0% {
+    filter: hue-rotate(0deg) drop-shadow(0.3rem 0.4rem 0.2rem #000);
+  }
+
+  50% {
+    filter: hue-rotate(180deg) drop-shadow(0.3rem 0.4rem 0.2rem #000);
+  }
+
+  100% {
+    filter: hue-rotate(360deg) drop-shadow(0.3rem 0.4rem 0.2rem #000);
   }
 }

@@ -1,0 +1,19 @@
+@import '../../styles/abstracts/sass-variables';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+
+  @media only screen and (min-width: $bp-xl) {
+    display: block;
+    transform: translateY(-1.3rem);
+  }
+}
+
+.row {
+  margin: 0 0.4rem !important;
+}

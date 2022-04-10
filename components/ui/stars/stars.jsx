@@ -1,4 +1,4 @@
-import Icon from './icon';
+import Icon from '@/components/ui/icon/icon';
 import css from './stars.module.scss';
 
 const Stars = () => {

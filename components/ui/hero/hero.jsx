@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import css from './hero.module.scss';
+import TFT from '@/components/ui/tft/tft';
 
 const Hero = ({ video }) => {
   const [animate, setAnimate] = useState(true);
@@ -21,6 +22,7 @@ const Hero = ({ video }) => {
       {/* <Link href="/services" passHref>
         <Nav.Link className="btn btn--hero btn--animated">Learn more</Nav.Link>
       </Link> */}
+      <TFT />
     </div>
   );
 };
