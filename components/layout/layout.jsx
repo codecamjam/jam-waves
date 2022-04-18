@@ -16,7 +16,7 @@ function Layout({ children }) {
 
   return (
     <NavContext.Provider value={{ expanded }}>
-      <Header toggle={toggleHandler} />
+      <Header toggle={toggleHandler} isHomePage={isHomePage} />
       <main className={css.main}>{children}</main>
       {!isHomePage && <Footer />}
     </NavContext.Provider>

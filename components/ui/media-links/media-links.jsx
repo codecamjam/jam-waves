@@ -6,20 +6,38 @@ const MediaLinks = () => {
   return (
     <footer className={css.hero}>
       <div className={css.logos}>
-        <a className={css.links} href="#" title="Twitch">
+        <a
+          className={css.links}
+          href="https://www.twitch.tv/toysfromtaiwan"
+          title="Twitch"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon spriteName="icon-twitch" />
         </a>
-        <a className={css.links} href="#" title="Bandcamp">
+        <a
+          className={css.links}
+          href="https://toysfromtaiwan.bandcamp.com/"
+          title="Bandcamp"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon spriteName="icon-bandcamp" />
         </a>
-        <a className={css.links} href="#" title="YouTube">
+        <a
+          className={css.links}
+          href="https://www.youtube.com/channel/UC6dxtcMsqP_EfYigct6vv0Q"
+          title="YouTube"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon spriteName="icon-youtube2" />
         </a>
-        <a className={css.links} href="#" title="Instagram">
+        <a href="#" title="Instagram" target="_blank" rel="noreferrer">
           <Icon spriteName="icon-instagram" />
         </a>
 
-        <a className={css.links} href="#" title="TikTok">
+        <a href="#" title="TikTok" target="_blank" rel="noreferrer">
           <Icon spriteName="icon-tiktok" />
         </a>
       </div>

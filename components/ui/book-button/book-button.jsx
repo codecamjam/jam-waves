@@ -5,8 +5,8 @@ function BookButton() {
     <a
       href="mailto:toysfromtaiwan@gmail.com"
       target="_blank"
-      className={[css.btn, css['btn--hero'], css['btn--animated']].join(' ')}
       rel="noreferrer"
+      className={[css.btn, css['btn--hero'], css['btn--animated']].join(' ')}
     >
       <div className={css['bio-btn__content']}>
         <span>Book Now!</span>

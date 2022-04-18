@@ -4,7 +4,7 @@ import Logo from '@/components/ui/logo/logo';
 
 import css from './header.module.scss';
 
-function Header({ toggle }) {
+function Header({ toggle, isHomePage }) {
   function handleToggle() {
     toggle();
   }
@@ -13,7 +13,7 @@ function Header({ toggle }) {
     <header className={css.headerNavbar}>
       <Navbar bg="dark" expand="md" className="py-0">
         <Container fluid={true}>
-          <Logo />
+          <Logo isHomePage={isHomePage} />
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={handleToggle}

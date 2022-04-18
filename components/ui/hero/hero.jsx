@@ -12,17 +12,14 @@ const Hero = ({ video }) => {
 
   return (
     <div className={css.hero}>
-      {/* <h1 className={css.heading}>
-        <span className={css.headingMain}>Jam In the Jam Lounge</span>
-        <span className={css.headingSub}>
-          (Except for the waves and nature sounds)
-        </span>
-      </h1> */}
+      <h1 className={css.heading}>
+        {/* <span className={css.headingSub}>Hi, I'm Jam! And these are my</span> */}
+        <span className={css.headingMain}>TOYS FROM TAIWAN</span>
+      </h1>
 
       {/* <Link href="/services" passHref>
         <Nav.Link className="btn btn--hero btn--animated">Learn more</Nav.Link>
       </Link> */}
-      <TFT />
     </div>
   );
 };
