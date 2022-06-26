@@ -11,6 +11,8 @@ const nextConfig = {
     });
     return config;
   },
+  basePath: '/nextjs-pages',
+  assetPrefix: '/nextjs-pages',
 };
 
 module.exports = nextConfig;
