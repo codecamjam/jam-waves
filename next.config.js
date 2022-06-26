@@ -11,8 +11,8 @@ const nextConfig = {
     });
     return config;
   },
-  basePath: '/jam-waves',
-  assetPrefix: '/jam-waves',
+  basePath: '/',
+  assetPrefix: '/',
 };
 
 module.exports = nextConfig;
