@@ -9,6 +9,10 @@ const Hero = ({ video }) => {
     setAnimate(false);
   }, [animate]);
 
+  const openYoutube = () => {
+    window.open('https://www.youtube.com/watch?v=WeU8KtQeUDc', '_blank');
+  };
+
   return (
     <div className={css.hero}>
       {/* <div className={css.icons}>
@@ -36,7 +40,7 @@ const Hero = ({ video }) => {
           <Icon spriteName="icon-shakers" />
         </div>
       </div> */}
-      <h1 className={css.heading}>
+      <h1 className={css.heading} onClick={openYoutube}>
         <span className={`${css.text} ${css['text--1']}`}>Toys</span>
         <span className={`${css.text} ${css['text--2']}`}>From</span>
         <span className={`${css.text} ${css['text--3']}`}>Taiwan</span>

@@ -5,7 +5,7 @@ const OneHundred = () => {
   const list = [
     'No Backing Tracks',
     'No Metronome',
-    'All Organic',
+    'In Real Time',
     'On The Fly',
   ];
 

@@ -25,7 +25,8 @@
 }
 
 /********************************************************/
-.tft {
+.toysfromtaiwan {
+  display: none;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.2rem;
   line-height: 0;
@@ -33,15 +34,9 @@
   word-spacing: 0rem;
   font-weight: bold;
 
-  @media only screen and (min-width: $bp-sm) {
-    font-size: 2.2rem;
-    word-spacing: 0.5rem;
-    font-weight: bold;
-  }
-
   @media only screen and (min-width: $bp-md) {
     display: block;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     word-spacing: 0.4rem;
     font-weight: 400;
   }
@@ -71,6 +66,43 @@
   }
 }
 
+/********************************************************/
+.tft {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0rem;
+  line-height: 0;
+  font-style: italic;
+  font-size: 2.7rem;
+  font-weight: 600;
+  display: block;
+
+  @media only screen and (min-width: $bp-md) {
+    display: none;
+    font-weight: 400;
+  }
+}
+
+/********************************************************/
+.jam {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 0;
+  font-weight: 600;
+  display: block;
+  font-size: 2rem;
+  transform: translate(4rem, -0.2rem);
+
+  @media only screen and (min-width: $bp-md) {
+    transform: translate(5.2rem, -0.3rem);
+    font-size: 2.4rem;
+    transform: translate(4.7rem, -0.2rem);
+  }
+
+  @media only screen and (min-width: $bp-xl) {
+    transform: translate(5.2rem, -0.3rem);
+    font-size: 2.8rem;
+  }
+}
 /********************************************************/
 .icon {
   position: absolute;

@@ -16,7 +16,11 @@ const Logo = ({ isHomePage }) => {
               <Icon spriteName="icon-eye" />
             </div>
           )}
-          {!isHomePage && <span className={css.tft}>TOYS FROM TAIWAN</span>}
+          {!isHomePage && (
+            <span className={css.toysfromtaiwan}>TOYS FROM TAIWAN</span>
+          )}
+          {!isHomePage && <span className={css.tft}>T.F.T.</span>}
+          {isHomePage && <span className={css.jam}>jam</span>}
           <Icon spriteName="" />
         </Navbar.Brand>
       </Link>

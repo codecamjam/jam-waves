@@ -20,13 +20,13 @@ function Header({ toggle, isHomePage }) {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Navlink route="/shows" text="shows" icon="icon-calendar" />
               <Navlink route="/about" text="about" icon="icon-accessibility" />
               <Navlink
                 route="/contact"
                 text="contact"
                 icon="icon-address-book"
               />
+              <Navlink route="/shows" text="shows" icon="icon-calendar" />
             </Nav>
           </Navbar.Collapse>
         </Container>

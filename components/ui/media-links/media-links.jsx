@@ -33,11 +33,23 @@ const MediaLinks = () => {
         >
           <Icon spriteName="icon-youtube2" />
         </a>
-        <a href="#" title="Instagram" target="_blank" rel="noreferrer">
+        <a
+          className={css.links}
+          href="https://www.instagram.com/toysfromtaiwan/"
+          title="Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon spriteName="icon-instagram" />
         </a>
 
-        <a href="#" title="TikTok" target="_blank" rel="noreferrer">
+        <a
+          className={css.links}
+          href="https://www.tiktok.com/@toysfromtaiwan"
+          title="TikTok"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon spriteName="icon-tiktok" />
         </a>
       </div>
