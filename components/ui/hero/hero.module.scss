@@ -10,6 +10,7 @@
   margin: auto;
   padding-bottom: 7rem;
   color: var(--text-light);
+  position: relative;
 
   width: 70%;
   position: relative;
@@ -62,48 +63,11 @@
 
 /**********************************************************************/
 .icons {
+  margin: 0 auto;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
-}
-
-/**********************************************************************/
-.icon {
-  // position: absolute;
-
-  svg {
-    width: 7rem;
-    height: 7rem;
-  }
-
-  &__guitar {
-  }
-
-  &__xylophone {
-  }
-
-  &__rockstar {
-    transform: rotateY(180deg) rotateZ(-25deg);
-    svg {
-      width: 10rem;
-      height: 10rem;
-    }
-  }
-
-  &__handsonic {
-  }
-
-  &__keys {
-  }
-
-  &__notes {
-  }
-
-  &__bongos {
-    svg {
-      width: 10rem;
-      height: 10rem;
-    }
-  }
+  justify-content: center;
+  border: 1px solid black;
 }
 
 /**********************************************************************/
@@ -136,8 +100,13 @@
     }
   }
 
+  @media only screen and (max-width: $bp-md) {
+    font-size: 3.5rem;
+    transform: translateY(-1rem);
+  }
+
   @media only screen and (max-width: $bp-xs) {
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 0.7rem;
 
     &--1,
@@ -147,5 +116,24 @@
       align-self: center;
       margin: 0rem 0;
     }
+  }
+}
+
+/**********************************************************************/
+.note {
+  display: block;
+
+  text-align: center;
+  font-size: 4.2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -25%);
+
+  @media only screen and (min-width: $bp-xs) {
+    display: none;
   }
 }

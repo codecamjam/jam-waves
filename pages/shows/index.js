@@ -5,8 +5,12 @@ function ShowsPage() {
   let color;
   return (
     <div className={css.container}>
-      <LoadingGears />
-      <p className={css.text}> booking shows soon!</p>
+      <div className={css.gears}>
+        <LoadingGears />
+      </div>
+
+      <p className={css.text__small}> booking shows soon!</p>
+      <p className={css.text__big}>I'm booking shows soon!</p>
     </div>
   );
 }
