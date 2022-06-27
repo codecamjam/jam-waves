@@ -10,7 +10,7 @@ function ShowsPage() {
       </div>
 
       <p className={css.text__small}> booking shows soon!</p>
-      <p className={css.text__big}>I'm booking shows soon!</p>
+      <p className={css.text__big}>{`I'm`} booking shows soon!</p>
     </div>
   );
 }
