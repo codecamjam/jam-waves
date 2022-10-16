@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import css from './show.module.scss';
-import Image from 'next/image';
 function Show({ venue, website, day, date, time, address, image, alt, maps }) {
   const formatAddr = address.split('!');
   return (
