@@ -1,9 +1,9 @@
 import { Nav } from 'react-bootstrap';
 import Link from 'next/link';
-import Icon from '@/components/ui/icon/icon';
+import Icon from '../icon';
 import css from './nav-link.module.scss';
 
-const Navlink = ({ text, icon, route }) => {
+export default function NavLink({ text, icon, route }) {
   return (
     <Link href={route} passHref>
       <Nav.Link>
@@ -15,5 +15,3 @@ const Navlink = ({ text, icon, route }) => {
     </Link>
   );
 };
-
-export default Navlink;

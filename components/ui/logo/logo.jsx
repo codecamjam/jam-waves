@@ -1,15 +1,15 @@
 import { Navbar } from 'react-bootstrap';
 import Link from 'next/link';
-import Icon from '@/components/ui/icon/icon';
+import Icon from '../icon';
 import css from './logo.module.scss';
-const Logo = ({ isHomePage }) => {
+
+export default function Logo({ isHomePage }) {
   return (
     <div className={css.logo}>
       <Link href={isHomePage ? '/about' : '/'} passHref>
         <Navbar.Brand
-          className={`${css.content} ${
-            isHomePage ? css.content__homepage : ''
-          }`}
+          className={`${css.content} ${isHomePage ? css.content__homepage : ''
+            }`}
         >
           {isHomePage && (
             <div className={css.icon}>
@@ -27,5 +27,3 @@ const Logo = ({ isHomePage }) => {
     </div>
   );
 };
-
-export default Logo;

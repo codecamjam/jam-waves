@@ -1,7 +1,7 @@
-import Card from '@/components/ui/card/card';
+import { Card } from '@/components';
 // import css from "./live.module.scss";
 
-const Live = () => {
+export default function Live() {
   const list = [
     'Live Entertainment',
     'Instrumental Jams',
@@ -27,4 +27,3 @@ const Live = () => {
   );
 };
 
-export default Live;

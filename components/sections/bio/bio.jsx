@@ -1,22 +1,19 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import Headshot from '@/components/ui/head-shot/head-shot';
-import Contact from '@/components/ui/contact/contact';
-import Icon from '@/components/ui/icon/icon';
-import { text1, text2, text3, text4 } from './bio.utils';
+import { BookButton, Icon, Contact, HeadShot } from '@/components';
+import { text1, text2, text3, text4 } from './utils';
 import css from './bio.module.scss';
-import BookButton from '@/components/ui/book-button/book-button';
 
 export default function Bio() {
   return (
     <section className={css.bioWrap}>
       <Container className={`margin-auto  pl-2 pr-2 ${css.bio}`}>
-        <Headshot mobile={false} />
+        <HeadShot mobile={false} />
         <Row>
           <Col xs={12} className="d-flex justify-content-center">
             <Contact />
           </Col>
           <Col xs={12} className="d-flex justify-content-center">
-            <Headshot mobile={true} />
+            <HeadShot mobile={true} />
           </Col>
 
           <Col

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import css from './show.module.scss';
-function Show({ venue, website, day, date, time, address, image, alt, maps }) {
+
+export default function Show({ venue, website, day, date, time, address, image, alt, maps }) {
   const formatAddr = address.split('!');
   return (
     <div className="d-flex flex-column align-items-center">
@@ -21,5 +22,3 @@ function Show({ venue, website, day, date, time, address, image, alt, maps }) {
     </div>
   );
 }
-
-export default Show;

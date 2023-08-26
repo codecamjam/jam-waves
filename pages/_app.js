@@ -1,12 +1,11 @@
-import '@/styles/globals.scss';
-import Head from 'next/head';
-import Layout from '@/components/layout/layout';
-import { useEffect } from 'react';
-import { getAppHeight } from '@/utils/getAppHeight.utils';
-import BackgroundVideo from '@/components/ui/background-video/background-video';
-import { preventResizeAnime } from '@/utils/preventResizeAnime.utils';
 
-function MyApp({ Component, pageProps }) {
+import { useEffect } from 'react';
+import Head from 'next/head';
+import { BackgroundVideo, Layout } from '@/components';
+import { getAppHeight, preventResizeAnime } from '@/utils';
+import '@/styles/globals.scss';
+
+export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     getAppHeight();
     preventResizeAnime();
@@ -26,5 +25,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp;

@@ -1,11 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
-import NavContext from '@/store/nav-context';
-
+import Context from '@/context';
 import css from './hero.module.scss';
 
-const Hero = ({ video }) => {
+export default function Hero({ video }) {
   const [animate, setAnimate] = useState(true);
-  const ctx = useContext(NavContext);
+  const ctx = useContext(Context);
 
   useEffect(() => {
     setAnimate(false);
@@ -27,4 +26,3 @@ const Hero = ({ video }) => {
   );
 };
 
-export default Hero;

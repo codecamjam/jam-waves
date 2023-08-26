@@ -1,7 +1,7 @@
-import CardItem from '@/components/ui/card/card';
-// import css from "./one-hundred-percent.module.scss";
+import { Card } from '@/components';
+// import css from "./oneHundredPercent.module.scss";
 
-const OneHundred = () => {
+export default function OneHundredPercent() {
   const list = [
     'No Backing Tracks',
     'No Metronome',
@@ -13,7 +13,7 @@ const OneHundred = () => {
 
   return (
     <section>
-      <CardItem
+      <Card
         title="100%"
         icon="icon-equalizer2"
         list={list}
@@ -21,9 +21,8 @@ const OneHundred = () => {
         img="photo1"
       >
         filler
-      </CardItem>
+      </Card>
     </section>
   );
 };
 
-export default OneHundred;

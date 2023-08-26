@@ -1,7 +1,6 @@
 import css from './shows.module.scss';
-import { shows } from '@/utils/shows.util';
-import Show from '@/components/ui/show/show';
-import LoadingGears from '@/components/ui/loadingGears/loadingGears';
+import { shows } from '@/utils';
+import { LoadingGears, Show } from '@/components';
 
 function BookingSoon() {
   return (
@@ -15,7 +14,7 @@ function BookingSoon() {
   );
 }
 
-function ShowsPage() {
+export default function ShowsPage() {
   if (!shows.length) return <BookingSoon />;
 
   return (
@@ -43,5 +42,3 @@ function ShowsPage() {
     </div>
   );
 }
-
-export default ShowsPage;

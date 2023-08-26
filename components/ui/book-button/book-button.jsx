@@ -1,6 +1,6 @@
 import css from './book-button.module.scss';
 
-function BookButton() {
+export default function BookButton() {
   return (
     <a
       href="mailto:toysfromtaiwan@gmail.com"
@@ -15,4 +15,3 @@ function BookButton() {
   );
 }
 
-export default BookButton;

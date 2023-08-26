@@ -1,8 +1,7 @@
-import Icon from '@/components/ui/icon/icon';
-
+import Icon from '../icon';
 import css from './media-links.module.scss';
 
-const MediaLinks = () => {
+export default function MediaLinks() {
   return (
     <footer className={css.hero}>
       <div className={css.logos}>
@@ -59,5 +58,3 @@ const MediaLinks = () => {
     </footer>
   );
 };
-
-export default MediaLinks;

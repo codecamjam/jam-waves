@@ -1,8 +1,7 @@
-import React from 'react';
-import { getCustomStyle } from './icon.utils';
+import { getCustomStyle } from './utils';
 import css from './icon.module.scss';
 
-const Icon = ({ spriteName, variant }) => {
+export default function Icon({ spriteName, variant }) {
   const customStyle = getCustomStyle(spriteName);
 
   let spritePath = `${process.env.NEXT_PUBLIC_ICONS}/sprite.svg#${spriteName}`;
@@ -19,5 +18,3 @@ const Icon = ({ spriteName, variant }) => {
     </svg>
   );
 };
-
-export default React.memo(Icon);

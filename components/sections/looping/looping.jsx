@@ -1,4 +1,4 @@
-import CardItem from '@/components/ui/card/card';
+import { Card } from '@/components';
 // import css from "./iooping.module.scss";
 
 const Looping = () => {
@@ -13,7 +13,7 @@ const Looping = () => {
 
   return (
     <section>
-      <CardItem
+      <Card
         title="Looping"
         icon="icon-music"
         list={list}
@@ -21,7 +21,7 @@ const Looping = () => {
         img="photo3"
       >
         filler
-      </CardItem>
+      </Card>
     </section>
   );
 };

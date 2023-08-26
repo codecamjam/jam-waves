@@ -1,8 +1,7 @@
-import Icon from '@/components/ui/icon/icon';
-
+import { Icon } from '@/components';
 import css from './footer.module.scss';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className={css.footer}>
       <div className={css.logos}>
@@ -56,4 +55,3 @@ function Footer() {
   );
 }
 
-export default Footer;

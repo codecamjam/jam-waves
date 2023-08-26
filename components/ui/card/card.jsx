@@ -1,8 +1,8 @@
-import Icon from '@/components/ui/icon/icon';
-import Stars from '@/components/ui/stars/stars';
+import Icon from '../icon';
+import Stars from '../stars';
 import css from './card.module.scss';
 
-const Card = ({ title, icon, list, text, img }) => {
+export default function Card({ title, icon, list, text, img }) {
   return (
     <div className={css.card}>
       <div className={css.header}>
@@ -27,5 +27,3 @@ const Card = ({ title, icon, list, text, img }) => {
     </div>
   );
 };
-
-export default Card;

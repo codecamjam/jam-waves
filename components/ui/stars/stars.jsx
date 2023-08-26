@@ -1,7 +1,7 @@
-import Icon from '@/components/ui/icon/icon';
+import Icon from '../icon';
 import css from './stars.module.scss';
 
-const Stars = () => {
+export default function Stars() {
   return (
     <div className={css.stars}>
       <Icon spriteName="icon-star-empty" />
@@ -12,5 +12,3 @@ const Stars = () => {
     </div>
   );
 };
-
-export default Stars;

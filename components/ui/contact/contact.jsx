@@ -1,4 +1,4 @@
-import Icon from '@/components/ui/icon/icon';
+import { Icon } from '@/components';
 import css from './contact.module.scss';
 
 export default function Contact() {

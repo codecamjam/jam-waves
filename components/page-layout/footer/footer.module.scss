@@ -1,4 +1,4 @@
-@import '../../styles/abstracts/sass-variables';
+@import '../../../styles/abstracts/sass-variables';
 
 /***********************************************************/
 .footer {
@@ -70,6 +70,7 @@
 
 .jam {
   display: none;
+
   @media only screen and (min-width: $bp-xl) {
     display: block;
     color: rgba(#fff, 0.6);

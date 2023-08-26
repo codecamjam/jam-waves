@@ -1,10 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import OneHundredPercent from '@/components/sections/one-hundred-percent';
-import Live from '@/components/sections/live';
-import Looping from '@/components/sections/looping';
+import { OneHundredPercent, Live, Looping } from '@/components';
 import css from './about.module.scss';
 
-const About = () => {
+export default function About() {
   return (
     <div className={css.about}>
       <Container className="m-0 p-0" fluid={true}>
@@ -35,5 +33,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

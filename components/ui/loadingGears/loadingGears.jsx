@@ -1,7 +1,6 @@
-import React from 'react';
 import css from './loadingGears.module.scss';
 
-function LoadingGears() {
+export default function LoadingGears() {
   return (
     <div className={css.container}>
       <svg
@@ -64,5 +63,3 @@ function LoadingGears() {
     </div>
   );
 }
-
-export default LoadingGears;

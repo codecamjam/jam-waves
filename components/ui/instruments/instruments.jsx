@@ -1,6 +1,7 @@
+import { Icon } from '@/components'
 import css from './instruments.module.scss';
-import Icon from '@/components/ui/icon/icon';
-function instruments() {
+
+export default function instruments() {
   return (
     <div className={css.icons}>
       <div className={[css.icon__bongos, css.icon].join(' ')}>
@@ -29,5 +30,3 @@ function instruments() {
     </div>
   );
 }
-
-export default instruments;

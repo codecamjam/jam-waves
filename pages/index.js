@@ -1,10 +1,9 @@
 import { useContext } from 'react';
-import NavContext from '@/store/nav-context';
-import Hero from '@/components/ui/hero/hero';
-import MediaLinks from '@/components/ui/media-links/media-links';
+import Context from '@/context';
+import { Hero, MediaLinks } from '@/components';
 
 export default function HomePage() {
-  const ctx = useContext(NavContext);
+  const ctx = useContext(Context);
   return (
     <div className="homePage">
       <Hero />
