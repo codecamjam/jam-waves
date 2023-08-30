@@ -29,7 +29,7 @@ export default function Support() {
           friends and loved ones about me and my Toys From Taiwan! Thanks again,
           and I hope to play for you someday soon!
         </p>
-        <h3 className={css.tips}>{`$Feelin Tipsy?$`}</h3>
+        <h3 className={css.tips}>{`$$Feelin Tipsy?$$`}</h3>
         <Row className="">
           <Col
             {...defaultSizes}

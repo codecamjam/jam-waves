@@ -40,7 +40,7 @@ export default function About() {
                   list={[
                     "Live Entertainment",
                     "Instrumental Jams",
-                    "Exprimentation",
+                    "Experimentation",
                     "Improvisation",
                   ]}
                   text="Music To Help You Relax"
@@ -56,8 +56,8 @@ export default function About() {
                   icon="icon-equalizer2"
                   list={[
                     "Keyboards / Synths",
-                    "Electric Guitar",
                     "Drum Machines",
+                    "Electric Guitar",
                     "Bass Guitar",
                   ]}
                   text="JAM Plays It All"
@@ -95,9 +95,9 @@ export default function About() {
                   icon="icon-video-camera"
                   list={[
                     "Ambient Spaces",
-                    "Island Vibes",
-                    "Guitar Solos",
                     "Soundscapes",
+                    "Guitar Solos",
+                    "Island Vibes",
                   ]}
                   text="For Melting Into The Couch"
                 >
@@ -112,8 +112,8 @@ export default function About() {
                   icon="icon-mic"
                   list={[
                     "Video Game Sounds",
-                    "N64 Water Levels",
                     "Retro Space Funk",
+                    "N64 Water Levels",
                     "Vaporwave",
                   ]}
                   text="90's PC-Game Music"

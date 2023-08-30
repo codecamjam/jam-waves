@@ -41,8 +41,13 @@
   }
 
   svg {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
+
+    @media only screen and (min-width: $bp-sm) {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 
   a {
@@ -90,10 +95,10 @@
   text-decoration: none !important;
   text-align: center;
   color: #00c244;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   font-weight: bold;
 
-  @media only screen and (min-width: $bp-md) {
+  @media only screen and (min-width: $bp-sm) {
     font-size: 3.2rem;
     margin: 0;
   }
