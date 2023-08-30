@@ -1,6 +1,6 @@
-import css from './shows.module.scss';
-import { shows } from '@/utils';
-import { LoadingGears, Show } from '@/components';
+import css from "./shows.module.scss";
+import { shows } from "@/utils";
+import { LoadingGears, Show } from "@/components";
 
 function BookingSoon() {
   return (
@@ -19,7 +19,8 @@ export default function ShowsPage() {
 
   return (
     <div className={css.container}>
-      <h4 className={css.heading}>Live Shows!</h4>
+      ok
+      {/* <h4 className={css.heading}>Live Shows!</h4>
       <div className={css.shows}>
         {shows.map(
           ({ venue, website, day, date, time, address, image, alt, maps }) => (
@@ -38,7 +39,7 @@ export default function ShowsPage() {
             </div>
           )
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

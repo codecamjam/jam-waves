@@ -1,3 +1,3 @@
-export { getAppHeight } from './getAppHeight';
-export { preventResizeAnime } from './preventResizeAnime';
-export { shows } from './shows-text';
+export { getAppHeight } from "./getAppHeight";
+export { shows } from "./shows-text";
+export { toggleDarkMode } from "./toggleDarkMode";

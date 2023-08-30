@@ -10,4 +10,13 @@ $theme-colors: (
 @import "~bootstrap/scss/bootstrap";
 
 @import "custom-nav";
-@import "custom-card";
+
+$body-font-family: "Franklin Gothic Medium" !important;
+
+.card {
+  background-color: var(--background);
+  color: var(--text) !important;
+  border: 1px solid var(--text) !important;
+  border-radius: 0 !important;
+  // box-shadow: 5px 5px 2px 0.3 !important;
+}
