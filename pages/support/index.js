@@ -1,65 +1,83 @@
-import { Icon } from "@/components";
+import { CardTitle, Icon } from "@/components";
+import { useAppContext } from "@/context";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import css from "./support.module.scss";
+
+const Heart = () => (
+  <div className={css.heart}>
+    <Icon spriteName="icon-heart" />
+  </div>
+);
+
+const defaultSizes = { xs: 12, sm: 12, md: 12, lg: 4, xl: 4 };
 
 export default function Support() {
+  const { darkMode } = useAppContext();
   return (
-    <Container className="mb-auto mt-5">
-      <Card className="p-4">
-        <h2 className="fw-bold text-center mb-4">THANK YOU FOR LISTENING!</h2>
-
-        <Row className="mb-3">
-          <Col xs={2} className="d-flex align-items-center">
-            {/* Replace with your icon component */}
-            <Icon spriteName="icon-venmo" />
-          </Col>
-          <Col xs={10} className="d-flex align-items-center">
-            <a
-              href="www.venmo-link.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              venmo: www.venmo-link.com
-            </a>
-          </Col>
-        </Row>
-
-        <Row className="mb-3">
-          <Col xs={2} className="d-flex align-items-center">
-            {/* Replace with your icon component */}
-            <Icon spriteName="icon-cashapp" />
-          </Col>
-          <Col xs={10} className="d-flex align-items-center">
-            <a
-              href="www.cashapp-link.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              cashapp: www.cashapp-link.com
-            </a>
-          </Col>
-        </Row>
-
-        <Row className="mb-4">
-          <Col xs={2} className="d-flex align-items-center">
-            {/* Replace with your icon component */}
-            <Icon spriteName="icon-paypal" />
-          </Col>
-          <Col xs={10} className="d-flex align-items-center">
-            <a
-              href="www.paypal-link.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              paypal: www.paypal-link.com
-            </a>
-          </Col>
-        </Row>
-
-        <p className="text-center">
-          I am truly passionate about creating live looping music, and I deeply
-          appreciate your visit and contribution to support my work. Your
-          support means the world to me!
+    <Container className={`my-auto px-0 mx-0  ${css.support}`}>
+      <Card className="pb-2 px-3 position-relative">
+        <h1 className="font-zilla-slab-highlight">TOYS FROM TAIWAN</h1>
+        <CardTitle element="h2">
+          <Heart />
+          THANK YOU
+          <Heart />
+        </CardTitle>
+        <p className="ml-2 py-2">
+          I am truly passionate about creating live music, and I sincerely
+          appreciate your visit and contribution to my work! Your support and
+          encouragement mean the world to me. Please spread the word with your
+          friends and loved ones about me and my Toys From Taiwan! Thanks again,
+          and I hope to play for you someday soon!
         </p>
+        <h3 className={css.tips}>{`$Feelin Tipsy?$`}</h3>
+        <Row className="">
+          <Col
+            {...defaultSizes}
+            className="d-flex flex-column align-items-center my-2"
+          >
+            <p className={css.payer}>CASH APP</p>
+
+            <a
+              href="https://cash.app/$jamcamfam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2"
+            >
+              <Icon spriteName="icon-cashapp" />
+              <span>$jamcamfam</span>
+            </a>
+          </Col>
+          <Col
+            {...defaultSizes}
+            className={`d-flex flex-column align-items-center my-2 ${css.tape}`}
+          >
+            <Icon spriteName="icon-tape" />
+          </Col>
+          <Col
+            {...defaultSizes}
+            className="d-flex flex-column align-items-center my-2"
+          >
+            <p className={css.payer}>VENMO</p>
+
+            <a
+              href="https://account.venmo.com/u/jamcamfam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2"
+            >
+              <Icon spriteName="icon-venmo" />
+              <span>$jamcamfam</span>
+            </a>
+          </Col>
+        </Row>
+
+        <div className="pt-2">
+          <CardTitle>
+            <Heart />
+            THANK YOU
+            <Heart />
+          </CardTitle>
+        </div>
       </Card>
     </Container>
   );

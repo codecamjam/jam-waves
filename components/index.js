@@ -2,6 +2,7 @@ export { default as Bio } from "./bio";
 export { default as Header } from "./header";
 export { default as Layout } from "./layout";
 export { default as BookButton } from "./book-button";
+export { default as AboutInfo } from "./aboutInfo";
 export { default as AboutCard } from "./aboutCard";
 export { default as CardTitle } from "./cardTitle";
 export { default as Contact } from "./contact";

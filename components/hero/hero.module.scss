@@ -6,7 +6,7 @@
   color: var(--text);
   word-spacing: 0rem;
   text-align: center;
-  font-weight: bold;
+  transform: translateY(0.3rem);
 
   @media only screen and (min-width: $bp-md) {
     font-size: 6rem;

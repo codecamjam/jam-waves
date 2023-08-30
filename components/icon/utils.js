@@ -67,6 +67,9 @@ export const getCustomStyle = (spriteName) => {
     case "icon-soundcloud":
       customStyle = "soundcloud";
       break;
+    case "icon-venmo":
+      customStyle = "venmo";
+      break;
     case "icon-waves":
       customStyle = "waves";
       break;
