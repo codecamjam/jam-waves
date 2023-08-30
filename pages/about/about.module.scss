@@ -1,4 +1,4 @@
-@import '../../styles/abstracts/sass-variables';
+@import "../../styles/abstracts/sass-variables";
 
 .about {
   display: flex;
@@ -11,8 +11,4 @@
   @media only screen and (min-width: $bp-xl) {
     display: block;
   }
-}
-
-.row {
-  margin: 0 0.4rem !important;
 }
