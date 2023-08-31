@@ -1,17 +1,27 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { useAppContext } from "@/context";
 import css from "./picture.module.scss";
 
-export default function Picture({ img, alt, w, h }) {
+export default function Picture({ img, alt }) {
   const { darkMode } = useAppContext();
+
+  const imgSrc = `/images/${img}`;
+
+  const imgStyle = {
+    maxWidth: "100%", // Set maximum width to 100% of container
+    height: "auto", // Allow automatic height calculation
+    ...(darkMode ? { filter: "invert(100%)" } : {}),
+  };
+
   return (
     <div className={css.container}>
-      <Image
-        src={`/images/${img}`}
+      <img
+        src={imgSrc}
         alt={alt}
-        width={w}
-        height={h}
-        style={darkMode ? { filter: "invert(100%)" } : null}
+        style={imgStyle}
+        className={css.picture} // Apply any additional styles here
+        width={850}
+        height={503}
       />
     </div>
   );
