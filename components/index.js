@@ -8,6 +8,7 @@ export { default as CardTitle } from "./cardTitle";
 export { default as Contact } from "./contact";
 export { default as DarkModeButton } from "./darkModeButton";
 export { default as HeadShot } from "./head-shot";
+export { default as Heart } from "./heart";
 export { default as Hero } from "./hero";
 export { default as Icon } from "./icon";
 export { default as Instrument } from "./instrument";

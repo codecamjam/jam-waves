@@ -1,37 +1,13 @@
 @import "../../styles/abstracts/sass-variables";
 
 /**********************************************************************/
-.bioWrap {
-  // margin-top: 1rem;
-}
-
-/**********************************************************************/
 .bio {
   position: relative;
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  padding: 1.2rem;
-  margin: 1rem auto;
-  // box-shadow: 0.1rem 0.3rem 0.4rem rgba(0, 0, 0, 0.7);
   border: 1px solid var(--text);
-
   color: var(--text);
-
-  // @media only screen and (min-width: $bp-sm) {
-  //   // box-shadow: 0.8rem 1.3rem 0.7rem rgba(0, 0, 0, 0.4);
-  //   margin: 1rem auto 2rem;
-  // }
-
-  // @media only screen and (min-width: $bp-md) {
-  //   margin: 1rem auto 3rem;
-
-  //   // box-shadow: 1.8rem 1.7rem 1rem rgba(0, 0, 0, 0.4);
-  // }
-
-  // @media only screen and (min-width: 103.12375em) {
-  //   // box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
-  // }
 }
 
 /**********************************************************************/
@@ -72,7 +48,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0 1rem;
 
   strong {

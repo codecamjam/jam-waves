@@ -1,7 +1,7 @@
 import { Icon } from "@/components";
 import css from "./cardTitle.module.scss";
 
-export default function CardTitle({ children, element }) {
+export default function CardTitle({ children, element, className }) {
   return (
     <>
       {element === "h2" ? (

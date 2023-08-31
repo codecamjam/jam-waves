@@ -1,3 +1,5 @@
+@import "../../styles/abstracts/sass-variables";
+
 .container {
   height: 100%;
   display: -webkit-box;
@@ -15,14 +17,18 @@
 }
 
 .machine {
-  width: 60vmin;
-  fill: rgba(#fff, 0.7);
+  width: 50vmin;
+  fill: var(--text);
+
+  @media only screen and (min-width: $bp-md) {
+    width: 50vmin;
+  }
 }
 
 .small-shadow,
 .medium-shadow,
 .large-shadow {
-  fill: rgba(0, 0, 0, 0.313);
+  fill: var(--background);
 }
 
 .small {

@@ -31,6 +31,7 @@
 
   ul {
     text-transform: capitalize;
+    font-weight: bold;
   }
 }
 
@@ -78,14 +79,36 @@
   }
 }
 
-// .flip1 {
-//   svg {
-//     transform: rotateZ(345deg);
-//   }
-// }
+/****************************************************/
+.bringit {
+  font-size: 1.4rem;
+  margin-left: 0.7rem;
+  padding-top: 0.5rem;
+}
 
-// .flip2 {
-//   svg {
-//     transform: rotateY(180deg);
-//   }
-// }
+/****************************************************/
+.list {
+  font-size: 1.2rem;
+
+  li {
+    font-weight: normal;
+  }
+}
+
+/****************************************************/
+.cardStart {
+  border-right: 1px solid var(--text);
+
+  @media only screen and (min-width: $bp-lg) {
+    border-right: 0px solid transparent !important;
+  }
+}
+
+/****************************************************/
+.cardMiddle {
+  border-left: 1px solid var(--text);
+
+  @media only screen and (min-width: $bp-lg) {
+    border-left: 0px solid transparent !important;
+  }
+}
