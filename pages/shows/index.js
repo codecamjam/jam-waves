@@ -39,7 +39,7 @@ export default function ShowsPage() {
           </h3>
           <section className="px-3 pt-2">
             <p className="p-0 mb-0">
-              I am currently hard at work, meticulously scheduling and booking
+              {` I am currently hard at work, meticulously scheduling and booking
               upcoming shows. I am passionate about live instrumental music and
               I'm eager to perform in venues where original music is truly
               appreciated. Please check back soon! I will be starting my live
@@ -47,7 +47,7 @@ export default function ShowsPage() {
               in Jacksonville and St. Augustine, please don't hesitate to reach
               out if you'd like me to visit your town and play for you! Thank
               you once again for stopping by, and keep an eye out for updates on
-              upcoming shows!
+              upcoming shows!`}
             </p>
           </section>
         </div>
