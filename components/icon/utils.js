@@ -142,6 +142,10 @@ export const getCustomStyle = (spriteName) => {
     case "icon-xylophone":
       customStyle = "xylophone";
       break;
+    case "icon-many-notes":
+      customStyle = "many-notes";
+      break;
+
     default:
       customStyle = null;
   }

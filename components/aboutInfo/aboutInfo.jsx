@@ -4,7 +4,7 @@ import css from "./aboutInfo.module.scss";
 
 export default function AboutInfo() {
   return (
-    <Container className={`my-3 px-0 mx-0 ${css.aboutInfo}`}>
+    <Container fluid="md" className={`my-3 px-0 mx-0 ${css.aboutInfo}`}>
       <Card className="p-4">
         <h2 className="mb-4">Toys From Taiwan - Live Looping Jams</h2>
         <p>

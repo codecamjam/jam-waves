@@ -1,10 +1,11 @@
-import { Icon } from '@/components';
-import css from './contact.module.scss';
+import { Icon } from "@/components";
+import css from "./contact.module.scss";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Contact() {
   return (
-    <div className={css.contact}>
-      <h4 className={css.heading}>Get in touch</h4>
+    <div className={`${css.contact} mx-0 px-0`}>
+      <h2 className={css.heading}>BOOK A SHOW!</h2>
       <div className={css.row}>
         <Icon spriteName="icon-eye" />
         <div className={css.text}>
@@ -15,21 +16,8 @@ export default function Contact() {
             rel="noreferrer"
           >
             <span className={css.name} title="LinkedIn">
-              Jam Waves 果酱
+              jamontheweb.net 果酱
             </span>
-          </a>
-        </div>
-      </div>
-      <div className={css.row} title="Email">
-        <Icon spriteName="icon-envelop" />
-        <div className={css.text}>
-          <a
-            target="_blank"
-            href="mailto:toysfromtaiwan@gmail.com"
-            className={css.value}
-            rel="noreferrer"
-          >
-            ToysFromTaiwan@gmail.com
           </a>
         </div>
       </div>
@@ -43,6 +31,19 @@ export default function Contact() {
             rel="noreferrer"
           >
             (904) 563-3433
+          </a>
+        </div>
+      </div>
+      <div className={css.row} title="Email">
+        <Icon spriteName="icon-envelop" />
+        <div className={css.text}>
+          <a
+            target="_blank"
+            href="mailto:toysfromtaiwan@gmail.com"
+            className={css.value}
+            rel="noreferrer"
+          >
+            ToysFromTaiwan@gmail.com
           </a>
         </div>
       </div>

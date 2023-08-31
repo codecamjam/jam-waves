@@ -1,12 +1,12 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import { BookButton, Icon, Contact, HeadShot } from '@/components';
-import { text1, text2, text3, text4 } from './utils';
-import css from './bio.module.scss';
+import { Container, Row, Col } from "react-bootstrap";
+import { Icon, Contact, HeadShot, MediaLinks } from "@/components";
+import { text1, text2, text3, text4 } from "./utils";
+import css from "./bio.module.scss";
 
 export default function Bio() {
   return (
     <section className={css.bioWrap}>
-      <Container className={`margin-auto  pl-2 pr-2 ${css.bio}`}>
+      <Container fluid className={`px-2 ${css.bio}`}>
         <HeadShot mobile={false} />
         <Row>
           <Col xs={12} className="d-flex justify-content-center">
@@ -22,13 +22,13 @@ export default function Bio() {
             className="d-flex flex-column align-items-start justify-content-between"
           >
             <p className={css.text}>
-              <span>
-                {`Thanks for visiting my site! I'm a solo musician based in sunny Jacksonville, FL. I provide a`}{' '}
-                <strong>live</strong>{' '}
-                {`one man show that's unlike any solo act you've ever seen. `}
-                Basically, my show is a <strong>100% live-looped</strong>,
-                nonstop, instrumental jam session.
-                {` You'll see me play guitar, bass, keys, bongos, congos, and so much more!  And it's all me,`}{' '}
+              <span className="d-block">
+                {`Thanks for visiting my site!  I'm a solo musician based in sunny Jacksonville, FL. I provide a`}{" "}
+                <strong>live one man band</strong>{" "}
+                {`show that's unlike any solo act you've ever seen! `}
+                Basically, my show is a nonstop,{" "}
+                <strong>100% live-looped</strong>, instrumental jam session.
+                {` You'll see me play guitar, bass, keys, bongos, congos, and so much more!  And it's all me,`}{" "}
                 <strong>live-looped</strong>
                 {`, and made in real time! I may also have
                 some ambient nature sounds playing in the background from time
@@ -37,8 +37,12 @@ export default function Bio() {
             </p>
             <p className={css.text}>{text2}</p>
           </Col>
-          <Col xs={12} className="d-flex justify-content-center my-3">
-            <BookButton />
+        </Row>
+        <Row>
+          <Col className="my-3 d-flex justify-content-center">
+            <div>
+              <MediaLinks />
+            </div>
           </Col>
         </Row>
       </Container>
