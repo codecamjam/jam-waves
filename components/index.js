@@ -1,3 +1,24 @@
-export { Footer, Header, Layout } from './page-layout'
-export { Bio, Live, Looping, OneHundredPercent } from './sections';
-export { BackgroundVideo, BookButton, Card, Contact, HeadShot, Hero, Icon, Instruments, Logo, MediaLinks, NavLink, Show, Stars, TFT } from './ui';
+export { default as Bio } from "./bio";
+export { default as Header } from "./header";
+export { default as Layout } from "./layout";
+export { default as BookButton } from "./book-button";
+export { default as AboutInfo } from "./aboutInfo";
+export { default as AboutCard } from "./aboutCard";
+export { default as CardTitle } from "./cardTitle";
+export { default as Contact } from "./contact";
+export { default as DarkModeButton } from "./darkModeButton";
+export { default as HeadShot } from "./head-shot";
+export { default as Heart } from "./heart";
+export { default as Hero } from "./hero";
+export { default as Icon } from "./icon";
+export { default as Instrument } from "./instrument";
+export { default as LandingWords } from "./landingWords";
+export { default as JamInChinese } from "./jamInChinese";
+export { default as Picture } from "./picture";
+export { default as LoadingGears } from "./loadingGears";
+export { default as MediaLinks } from "./media-links";
+export { default as NavLink } from "./nav-link";
+export { default as Show } from "./show";
+export { default as Stars } from "./stars";
+export { default as TalkBubble } from "./talkBubble";
+export { default as TFT } from "./tft";
