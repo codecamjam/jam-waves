@@ -1,13 +1,16 @@
-const path = require('path');
+const path = require("path");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   webpack(config) {
-    config.resolve.alias['@'] = path.resolve.apply(__dirname);
+    config.resolve.alias["@"] = path.resolve.apply(__dirname);
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
     return config;
   },
