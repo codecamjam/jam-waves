@@ -27,7 +27,7 @@ export default function Bio() {
               {`show that's unlike any solo act you've ever seen! `}
               Basically, my show is a nonstop, <strong>100% live-looped</strong>
               , instrumental jam session.
-              {` You'll see me play guitar, bass, keys, bongos, congos, and so much more!  And it's all me,`}{" "}
+              {` You'll see me play guitar, bass, keys, bongos, drum machines, gizmos, and so much more!  And it's all me,`}{" "}
               <strong>live-looped</strong>
               {`, and made in real time! I may also have
                 some ambient nature sounds playing in the background from time

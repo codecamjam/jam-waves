@@ -38,21 +38,20 @@ export default function Support() {
             <p className={css.payer}>CASH APP</p>
 
             <a
-              href="https://cash.app/$jamcamfam"
+              href="https://cash.app/$toysfromtaiwan"
               target="_blank"
               rel="noopener noreferrer"
               className="mb-2"
             >
               <Icon spriteName="icon-cashapp" />
-              <span>$jamcamfam</span>
             </a>
           </Col>
-          <Col
+          {/* <Col
             {...defaultSizes}
             className={`d-flex flex-column align-items-center my-2 ${css.tape}`}
           >
             <Icon spriteName="icon-tape" />
-          </Col>
+          </Col> */}
           <Col
             {...defaultSizes}
             className="d-flex flex-column align-items-center my-2"
@@ -60,13 +59,27 @@ export default function Support() {
             <p className={css.payer}>VENMO</p>
 
             <a
-              href="https://account.venmo.com/u/jamcamfam"
+              href="https://account.venmo.com/u/toysfromtaiwan"
               target="_blank"
               rel="noopener noreferrer"
               className="mb-2"
             >
               <Icon spriteName="icon-venmo" />
-              <span>$jamcamfam</span>
+            </a>
+          </Col>
+          <Col
+            {...defaultSizes}
+            className="d-flex flex-column align-items-center my-2"
+          >
+            <p className={css.payer}>PAYPAL</p>
+
+            <a
+              href="https://www.paypal.com/paypalme/toysfromtaiwan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2"
+            >
+              <Icon spriteName="icon-paypal" />
             </a>
           </Col>
         </Row>
