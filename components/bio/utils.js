@@ -7,7 +7,7 @@ with a tropical space vibe. I have spent the last 15 years
 perfecting the art of making people melt on the couch. Thanks
 for visiting my site!`;
 
-export const text2 = ` I provide an entertaining and musically engaging show. At the same time, TFT is more of an ambience than it is a traditional musical performance. All I want to do is jam out at a comfortable audio level
+export const text2 = ` I provide an entertaining and musically engaging show. At the same time, TFT is more of an ambiance than it is a traditional musical performance. All I want to do is jam out at a comfortable audio level
 while you and your friends can still have conversations with
 one another without yelling over the music. So get ready to be jammed, kick back, and watch me play with my Toys From Taiwan!`;
 
