@@ -1,12 +1,7 @@
 import Icon from "../icon";
-import { useAppContext } from "@/context";
 import css from "./media-links.module.scss";
 
 export default function MediaLinks() {
-  const { expanded } = useAppContext();
-
-  if (expanded) return null;
-
   return (
     <footer className={css.footer}>
       <div className={css.logos}>
