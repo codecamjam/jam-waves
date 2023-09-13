@@ -69,3 +69,34 @@ body {
   //   box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
   // }
 }
+
+.btn-black-and-white {
+  border-radius: 0 !important;
+  color: var(--text); /* Text color */
+  background-color: var(--background); /* Background color */
+  border-color: var(--text); /* Text color */ /* Border color */
+  transition: all 0.2s ease-in;
+  outline-color: var(--text) !important;
+
+  &:hover {
+    color: var(--background); /* Text color on hover */
+    background-color: var(--text); /* Background color on hover */
+    border-color: var(--text); /* Border color on hover */
+  }
+
+  &:focus {
+    outline-color: var(--text) !important;
+  }
+}
+
+.btn-link:focus {
+  outline: var(--text) !important/* Your desired color here */;
+  /* You can also customize other focus styles, e.g., outline-style, outline-width, etc. */
+}
+
+a {
+  &:focus {
+    outline: none !important;
+    outline-color: transparent !important;
+  }
+}

@@ -30,6 +30,9 @@ export default function Support() {
           and I hope to play for you someday soon!
         </p>
         <h3 className={css.tips}>{`$$Feelin Tipsy?$$`}</h3>
+        <p
+          className={css.instructions}
+        >{`(Tap an icon below to send a tip! Thank you!)`}</p>
         <Row className="">
           <Col
             {...defaultSizes}
@@ -62,7 +65,7 @@ export default function Support() {
               href="https://account.venmo.com/u/toysfromtaiwan"
               target="_blank"
               rel="noopener noreferrer"
-              className="mb-2"
+              className={`mb-2 ${css.venmo}`}
             >
               <Icon spriteName="icon-venmo" />
             </a>

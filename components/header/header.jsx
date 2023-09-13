@@ -1,12 +1,19 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { TFT, NavLink } from "@/components";
 import { useAppContext } from "@/context";
+import { useState } from "react"; // Import useState
 
 export default function Header() {
   const { darkMode, setExpanded } = useAppContext();
+  const [expanded, setLocalExpanded] = useState(false); // Add local state for expanded
 
   function toggleHandler() {
-    setExpanded((expanded) => !expanded);
+    setExpanded((prevExpanded) => !prevExpanded);
+    setLocalExpanded((prevExpanded) => !prevExpanded);
+  }
+
+  function handleNavLinkClick() {
+    setLocalExpanded(false);
   }
 
   return (
@@ -14,6 +21,7 @@ export default function Header() {
       <Navbar
         expand="md"
         className={`py-0 ${darkMode ? "navbar-dark" : "navbar-light"}`}
+        expanded={expanded}
       >
         <Container fluid>
           <TFT />
@@ -22,7 +30,7 @@ export default function Header() {
             onClick={toggleHandler}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+            <Nav onSelect={handleNavLinkClick}>
               <NavLink route="/about" text="about" icon="icon-accessibility" />
               <NavLink
                 route="/contact"

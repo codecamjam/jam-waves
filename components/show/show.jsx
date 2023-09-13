@@ -1,24 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import css from './show.module.scss';
-
-export default function Show({ venue, website, day, date, time, address, image, alt, maps }) {
-  const formatAddr = address.split('!');
+export default function Show({
+  date,
+  time,
+  name,
+  venue,
+  address,
+  flyer,
+  info,
+  alt,
+}) {
   return (
-    <div className="d-flex flex-column align-items-center">
-      <a href={website} title={venue} target="_blank" rel="noreferrer">
-        <img src={image} alt={alt} className={css.flyer} />
-      </a>
-      <a
-        href={maps}
-        title={'Directions to ' + venue}
-        target="_blank"
-        rel="noreferrer"
-        className={css.address}
-      >
-        {formatAddr.map((line, idx) => (
-          <p key={idx}>{line}</p>
-        ))}
-      </a>
+    <div>
+      <h2>Show Date: {date.toLocaleDateString()}</h2>
+      <p>Show Time: {time}</p>
+      <p>Show Name: {name}</p>
+      <p>Venue: {venue}</p>
+      <p>Address: {address}</p>
+      <p>More Info: {info}</p>
+      <img src={flyer} alt={alt} />
     </div>
   );
 }
