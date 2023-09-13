@@ -1,4 +1,4 @@
-import { Bio, BookButton, Icon, Stars } from "@/components";
+import { Bio, CustomButton, Icon, Stars } from "@/components";
 import css from "./contact.module.scss";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
@@ -31,7 +31,10 @@ export default function ContactPage() {
                 <li className="">Maybe more!</li>
               </ul>
               <div className="d-flex justify-content-center my-3">
-                <BookButton />
+                <CustomButton
+                  text="Book Now!"
+                  href="mailto:toysfromtaiwan@gmail.com"
+                />
               </div>
             </section>
           </Card>
@@ -55,7 +58,10 @@ export default function ContactPage() {
                 <li className="">Mystery Instruments</li>
               </ul>
               <div className="d-flex justify-content-center my-3">
-                <BookButton />
+                <CustomButton
+                  text="Book Now!"
+                  href="mailto:toysfromtaiwan@gmail.com"
+                />
               </div>
             </section>
           </Card>
@@ -82,7 +88,10 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div className="d-flex justify-content-center my-3">
-                <BookButton />
+                <CustomButton
+                  text="Book Now!"
+                  href="mailto:toysfromtaiwan@gmail.com"
+                />
               </div>
               <div className="pt-2 mt-4 mb-0">
                 <Stars />
