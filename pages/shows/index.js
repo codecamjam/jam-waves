@@ -10,8 +10,22 @@ export default function ShowsPage() {
   const { darkMode } = useAppContext();
 
   // Filter the shows to display only upcoming ones
-  const upcomingShows = shows.filter((show) => show.date >= currentDate);
-
+  const upcomingShows = shows.filter((show) => {
+    // Extract the date part of the show.date
+    const showDate = new Date(
+      show.date.getFullYear(),
+      show.date.getMonth(),
+      show.date.getDate()
+    );
+    // Extract the date part of the current date
+    const currentDateOnly = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDate()
+    );
+    // Compare the dates
+    return showDate >= currentDateOnly;
+  });
   const header = upcomingShows.length > 0 ? "SEE JAM LIVE!" : `Booking soon!`;
 
   return (
