@@ -6,7 +6,7 @@ import React, {
   useEffect,
   useRef,
 } from "react";
-import { getAppHeight, toggleDarkMode } from "@/utils";
+import { preventResizeAnime, toggleDarkMode } from "@/utils";
 
 const AppContext = createContext();
 
@@ -19,7 +19,7 @@ export const AppContextProvider = ({ children }) => {
   useEffect(() => {
     if (document && !doc?.current) {
       doc.current = document.documentElement;
-      getAppHeight(doc);
+      preventResizeAnime(doc);
       if (localStorage) {
         const storedDarkMode = localStorage.getItem("TFT_DARK_MODE");
         if (Boolean(storedDarkMode)) {
