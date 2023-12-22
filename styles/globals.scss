@@ -17,6 +17,18 @@ body {
   line-height: 1.7;
   // font-family: "Cutive Mono", monospace;
   font-family: "Lato", sans-serif;
+
+  @media only screen and (min-width: 120em) {
+    font-size: 1.14rem;
+  }
+
+  @media only screen and (min-width: 140em) {
+    font-size: 1.2rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .resize-animation-stopper * {
@@ -53,21 +65,6 @@ body {
   border: 1px solid var(--text);
 
   color: var(--text);
-
-  // @media only screen and (min-width: $bp-sm) {
-  //   box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
-  //   margin: 1rem auto 2rem;
-  // }
-
-  // @media only screen and (min-width: $bp-md) {
-  //   margin: 1rem auto 3rem;
-
-  //   box-shadow: 1.2rem 1rem 0.8rem rgba(0, 0, 0, 0.4);
-  // }
-
-  // @media only screen and (min-width: 103.12375em) {
-  //   box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
-  // }
 }
 
 .btn-black-and-white {
@@ -99,4 +96,16 @@ a {
     outline: none !important;
     outline-color: transparent !important;
   }
+}
+
+/* Changing the background color of the selection to blue with white text color */
+::selection {
+  background: var(--text);
+  color: var(--background);
+}
+
+/* For cross-browser compatibility */
+::-moz-selection {
+  background: var(--text);
+  color: var(--background);
 }

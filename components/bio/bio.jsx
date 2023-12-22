@@ -22,7 +22,7 @@ export default function Bio() {
         >
           <p className={css.text}>
             <span className="d-block">
-              {`Thanks for visiting my site!  I'm a solo musician based in sunny Jacksonville, FL. I provide a`}{" "}
+              {`Thanks for visiting my site!  I'm a solo musician based in sunny Jacksonville Beach, FL. I provide a`}{" "}
               <strong>live one man band</strong>{" "}
               {`show that's unlike any solo act you've ever seen! `}
               Basically, my show is a nonstop, <strong>100% live-looped</strong>

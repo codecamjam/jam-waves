@@ -15,9 +15,7 @@ export default function Contact() {
             className={css.value}
             rel="noreferrer"
           >
-            <span className={css.name} title="LinkedIn">
-              jamontheweb 果酱
-            </span>
+            jamontheweb 果酱
           </a>
         </div>
       </div>
