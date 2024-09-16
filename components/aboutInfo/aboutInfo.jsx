@@ -6,57 +6,27 @@ export default function AboutInfo() {
   return (
     <Container fluid="md" className={`my-3 px-0 mx-0 ${css.aboutInfo}`}>
       <Card className="p-4">
-        <h2 className="mb-4">Toys From Taiwan - Live Looping Jams</h2>
+        <h2 className="mb-4">Toys From Taiwan</h2>
         <p>
-          {`Hi, I'm JAM 果酱, and these are my Toys From Taiwan. Thanks for stopping by! Here's a little bit about what you'll find on
-          this site:`}
+          {`Hi, I'm Jam, and welcome to the Jam Lounge. Thanks for stopping by! Here's a little bit about me and my music project:`}
         </p>
         <h3>About Me</h3>
         <p>
-          {`I specialize in creating 100% live looping instrumental jams. Every
+          {`I specialize in creating 100% live looping songs and jams. Every
           beat, melody, and rhythm you hear is crafted in real time, with no
-          backing tracks or pre-recorded elements. I rely on loop machines,
-          effects pedals, guitars, basses, keyboards, and synths to create my unique sound. My
-          passion for music and my gear, much of which bears the "Made in
-          Taiwan" label, inspired the name "Toys From Taiwan."`}
+          backing tracks or any pre-recorded music. I use a bunch of loop machines and effects pedals to put it all together. I play guitar, bass, keyboard, and I put together random jams on the fly with some singing in between!"`}
         </p>
         <h3>The Music</h3>
         <p>
-          {`Experience deep relaxation as I take you on a live looping journey
-          through dynamic and spontaneous jams. Each session is an exploration
-          of sound, rhythm, and melody, brought to life before your ears. I'm looking forward to playing for you soon!`}
+          {`Experience deep relaxation
+          through dynamic and spontaneous jams in the Jam Lounge. Truely, every jam I make is an improvised arrangement of sound, rhythm, and melody, brought to life before your ears. And it's all live and made in real time! Come check out my show soon. I bet you'll dig it! I'm looking forward to playing for you!`}
         </p>
-        {/* <h3>The Website</h3>
-        <p>
-          {`This website was built from the ground up using Next.js, a powerful
-          React framework. While it's currently a static site, I have big plans
-          for its future:`}
+        <p className={`${css.thanks} fw-bold m-0`}>
+          Thanks for stopping by and hanging in the Jam Lounge!
         </p>
-        <ul>
-          <li>
-            {`I'll be upgrading to the latest version of Next.js to leverage its
-            advanced features.`}
-          </li>
-          <li>
-            {`I'll be incorporating TypeScript for enhanced code quality and
-            maintainability.`}
-          </li>
-          <li>
-            {`I'm working on connecting the site to my personal backend services,
-            enhancing the user experience and offering more interactive
-            features.`}
-          </li>
-        </ul>
-        <p>
-          {`In the meantime, enjoy the current version of the site—it's a snapshot
-          of my creative journey. Your visit means a lot to me, and your support
-          fuels my passion for creating live looping music.`}
-        </p> */}
-        <p className={css.thanks}>
-          Thank you for stopping by!
-          <br />
-          -- <span>JAM 果酱</span>
-        </p>
+       <span>-- <span>JAM</span></span>
+            
+        
       </Card>
     </Container>
   );

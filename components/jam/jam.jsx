@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Navbar } from "react-bootstrap";
 import { DarkModeButton } from "@/components";
-import css from "./tft.module.scss";
+import css from "./jam.module.scss";
 
 export default function TFT() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function TFT() {
       <DarkModeButton />
       <Link classname="ml-5" href={isHomePage ? "/about" : "/"} passHref>
         <Navbar.Brand>
-          <span className={css.tft}>TFT</span>
+          <span className={css.jam}></span>
         </Navbar.Brand>
       </Link>
     </div>

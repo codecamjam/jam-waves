@@ -11,11 +11,11 @@ export default function Contact() {
         <div className={css.text}>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/cameron-taghlabi-33b69518a/"
+            href="https://linktr.ee/jamontheweb"
             className={css.value}
             rel="noreferrer"
           >
-            jamontheweb 果酱
+            Jam on the Web
           </a>
         </div>
       </div>
@@ -37,11 +37,11 @@ export default function Contact() {
         <div className={css.text}>
           <a
             target="_blank"
-            href="mailto:toysfromtaiwan@gmail.com"
+            href="mailto:camjamt@gmail.com"
             className={css.value}
             rel="noreferrer"
           >
-            toysfromtaiwan@gmail.com
+            {`Jam's Email`}
           </a>
         </div>
       </div>

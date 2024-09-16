@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { TFT, NavLink } from "@/components";
+import { JAM, NavLink } from "@/components";
 import { useAppContext } from "@/context";
 import { useState } from "react"; // Import useState
 
@@ -24,13 +24,14 @@ export default function Header() {
         expanded={expanded}
       >
         <Container fluid>
-          <TFT />
+          <JAM />
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={toggleHandler}
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav onSelect={handleNavLinkClick}>
+              <NavLink route="/" text="home" icon="icon-home3" />
               <NavLink route="/about" text="about" icon="icon-accessibility" />
               <NavLink
                 route="/contact"

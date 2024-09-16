@@ -2,24 +2,24 @@
 import { useAppContext } from "@/context";
 import css from "./picture.module.scss";
 
-export default function Picture({ img, alt }) {
+export default function Picture({ img, alt, invert }) {
   const { darkMode } = useAppContext();
 
   const imgSrc = `/images/${img}`;
 
   const imgStyle = {
-    maxWidth: "100%", // Set maximum width to 100% of container
+    maxWidth: invert ? "100%" : "70%", // Set maximum width to 100% of container
     height: "auto", // Allow automatic height calculation
-    ...(darkMode ? { filter: "invert(100%)" } : {}),
+    ...(darkMode && invert ? { filter: "invert(100%)" } : {}),
   };
 
   return (
-    <div className={css.container}>
+    <div className='d-flex justify-content-center'>
       <img
         src={imgSrc}
         alt={alt}
         style={imgStyle}
-        className={css.picture} // Apply any additional styles here
+        className={invert ? '' : css.circle} // Apply any additional styles here
         width={850}
         height={503}
       />

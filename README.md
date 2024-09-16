@@ -1,10 +1,10 @@
-# Toys From Taiwan - Live Looping Instrumental Jams
+# Toys From Taiwan - Live Looping Jams
 
-Hi there, I'm Jam 果酱, and I'm excited to welcome you to my musical world—Toys From Taiwan. Here's a little bit about what you'll find on this site:
+Hi there, I'm Jam, and these are my Toys From Taiwan. Here's a little bit about what you'll find on this site:
 
 ## About Me
 
-I specialize in creating 100% live looping instrumental jams. Every beat, melody, and rhythm you hear is crafted in real time, with no backing tracks or pre-recorded elements. I rely on loop machines, effects pedals, keyboards, and synths to create my unique sound. My passion for music and my gear, much of which bears the "Made in Taiwan" label, inspired the name "Toys From Taiwan."
+I specialize in creating 100% live looping jams. Every beat, melody, and rhythm you hear is crafted in real time, with no backing tracks or pre-recorded elements. I rely on loop machines, effects pedals, keyboards, and synths to create my unique sound. My passion for music and my gear, much of which bears the "Made in Taiwan" label, inspired the name "Toys From Taiwan."
 
 ## The Music
 
@@ -22,4 +22,4 @@ In the meantime, enjoy the current version of the site—it's a snapshot of my c
 
 Thanks for stopping by!
 
-\-- Jam 果酱
+\-- Jam

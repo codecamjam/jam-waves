@@ -2,8 +2,16 @@
 @import "abstracts/css-variables";
 @import "abstracts/sass-variables";
 
+@font-face {
+  font-family: 'Cinerama';
+  src: url('/Cinerama.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
+  
   height: 100%;
   width: 100%;
   height: 100vh;
@@ -16,10 +24,10 @@ body {
   // font-weight: bold;
   line-height: 1.7;
   // font-family: "Cutive Mono", monospace;
-  font-family: "Lato", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   @media only screen and (min-width: 120em) {
-    font-size: 1.14rem;
+    font-size: 1.15rem;
   }
 
   @media only screen and (min-width: 140em) {
@@ -53,11 +61,12 @@ body {
 }
 
 .font-cutive-mono {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Monofett", monospace;
 }
 
-.font-zilla-slab-highlight {
-  font-family: "Zilla Slab Highlight", serif;
+.jam-header {
+  font-family: "Cinerama", monospace;
+  color: var(--text);
 }
 
 .card {
